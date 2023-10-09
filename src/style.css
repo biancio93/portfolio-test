@@ -1,0 +1,144 @@
+/* ======================================================
+STILE GENERALE
+====================================================== */
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  background-color: #280f36;
+  cursor: none;
+}
+
+svg {
+    overflow: visible;
+}
+
+.main-scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+/* ======================================================
+STILE INTERFACCIA
+====================================================== */
+
+.interface-top-container {
+    position: absolute;
+    top: 0;
+    right: 33%;
+    left: 33%;
+    z-index: 10;
+}
+.interface-bottom-container {
+    position: absolute;
+    bottom: -2px;
+    right: 28%;
+    left: 28%;
+    z-index: 10;
+}
+.lighting-shadow {
+    -webkit-filter: rop-shadow(0px 0px 8px rgba(245, 173, 49, 1));
+    filter: drop-shadow(0px 0px 8px rgba(245, 173, 49, 1));
+}
+.inactive {
+    pointer-events: none;
+}
+
+/* ======================================================
+STILE INTERFACCIA | CONTROLLI
+====================================================== */
+
+.control-container {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#standard-mode-bg{
+    filter: drop-shadow(0px 0px 0px rgba(245, 173, 49, 0));
+}
+
+.container-decoration {
+    outline-offset: 10px;
+    outline: 3px solid #fea500;
+    background-color: rgb(254 165 0 / 20%);
+    border-radius: 180px;
+    box-shadow: 0px 0px 120px rgb(254 165 0 / 30%);
+    width: 15vw;
+    height: 15vw;
+}
+
+.map-container {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    overflow: hidden;
+    border-radius: 200px;
+    z-index: 10;
+}
+
+.map {
+    width: 100%;
+}
+
+/* ======================================================
+LINE MOVMENT
+====================================================== */
+
+#line-speed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* ======================================================
+INTERFACER
+====================================================== */
+
+.interface-controls {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    bottom: 40%;
+    right: 40%;
+    outline: none;
+    z-index: 1;
+    pointer-events: none;
+    width: 20%;
+  }
+.planet-name{
+    font-family: 'Michroma', sans-serif;
+    fill:#fea500;
+    -webkit-filter: rop-shadow(0px 0px 8px rgba(245, 173, 49, 1));
+    filter: drop-shadow(0px 0px 8px rgba(245, 173, 49, 1));
+    opacity: 0;
+}
+.planet-distance-container{
+    font-family: 'Michroma', sans-serif;
+    font-size: 0.8em;
+}
+#distance-button{
+    opacity:0;
+}
+
+/* ======================================================
+POINTER
+====================================================== */
+
+.starship-pointer-1,
+.starship-pointer-2,
+.starship-pointer-3 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  pointer-events: none;
+}
